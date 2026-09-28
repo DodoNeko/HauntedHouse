@@ -221,7 +221,10 @@ button:active {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+    .testPage {
+        padding: 0px;
+    }
 
     .startBtnContainer {
         justify-content: flex-start;
