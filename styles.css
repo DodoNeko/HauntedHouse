@@ -15,7 +15,7 @@
 }
 
 .coverImg {
-    position: absolute;
+    position: fixed;
     min-height: 100vh;
     box-shadow: 20px 0 30px rgba(0,0,0,0.7);
 }
