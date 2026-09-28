@@ -18,6 +18,7 @@
     position: fixed;
     min-height: 100vh;
     box-shadow: 20px 0 30px rgba(0,0,0,0.7);
+    z-index: 1;
 }
 
 .testPage {
@@ -44,13 +45,15 @@
 
 
 .startContainer {
-    display:flex;
+    display: flex;
+    position:relative;
     float:right;
     padding: 20px;
     width: calc(100vw - 600px);
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    z-index: 2;
 }
 
 h1 {
@@ -83,9 +86,11 @@ h2 {
 .startBtnContainer {
     flex-grow: 1;
     display: flex;
+    position: relative;
     justify-items:end;
     align-items: center;
     width: 100%;
+    z-index: 3;
 }
 
 button:hover {
@@ -177,6 +182,7 @@ button:active {
     float:right;
     position: absolute;
     width: 100vw;
+    z-index: 4;
 }
 
 .adContainer{
@@ -218,15 +224,17 @@ button:active {
 @media (max-width: 900px) {
 
     .startBtnContainer {
-        justify-content: end;
-        align-items: end;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
+
     .startContainer {
-        width:100%;
-        
-        justify-items: end;
+        width: 100%;
+        justify-items: flex-end;
     }
+
     .startBtn {
-        position: absolute;
+        position: relative;
+        z-index: 4;
     }
 }
