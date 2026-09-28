@@ -1,0 +1,215 @@
+* {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.background {
+    background-image: url('./hh-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin:0;
+    min-height: 100vh;
+    caret-color: transparent;
+    animation: myAnimation 4s ease-in-out infinite;
+    background-blend-mode: multiply;
+}
+
+.coverImg {
+    position: absolute;
+    min-height: 100vh;
+    box-shadow: 20px 0 30px rgba(0,0,0,0.7);
+}
+
+.testPage {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.resultPage {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.startContainer {
+    display:flex;
+    float:right;
+    padding: 20px;
+    width: calc(100vw - 600px);
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    color:#d7c2aa;
+    font-size: 56px;
+}
+
+h2 {
+    color:#d7c2aa;
+    font-size: 24px;
+}
+
+
+.startPage {
+    display: block;
+}
+
+.elshow {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.elhide {
+    opacity: 0;
+    
+    visibility: hidden;
+}
+
+.startBtnContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-items:end;
+    align-items: center;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+button:active {
+    opacity: 0.6;
+}
+
+.startBtn {
+    margin-top: 50px;
+    padding: 24px 64px 24px 64px;
+    border: none;
+    border-radius: 40px;
+    font-size: 42px;
+    color: #d7c2aa;
+    background-color: hsl(26, 14%, 46%);
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
+    width: 500px;
+    content: wrap;
+}
+
+.testForm {
+    width: 70%;
+    margin-top: 24px;
+    height: 100vh;
+}
+
+.answer {
+    padding: 16px 24px 16px 24px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #d7c2aa;
+    background-color: hsl(26, 14%, 46%);
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
+    margin: 10px;
+    max-width: 400px;
+}
+
+.questionHeader {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.answerBox {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nextBtn {
+    padding: 16px 56px 16px 56px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #7c6453;
+    background-color: #312a2d;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
+    margin: 10px;
+}
+
+.selected {
+    background-color: #312a2d;
+}
+
+.reTest {
+    float: right;
+    margin-top: 20px;
+    padding: 16px 56px 16px 56px;
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    color: #7c6453;
+    background-color: #312a2d;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
+    margin: 10px;
+}
+
+.chamskaReklama {
+    float:right;
+    position: absolute;
+    width: 100vw;
+}
+
+.adContainer{
+    display: flex;
+    justify-content: end;
+}
+
+.adBtn {
+    padding: 4px 32px 4px 32px;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    color: #7c6453;
+    background-color: #312a2d;
+    text-decoration: none;
+}
+
+.adBtn:hover {
+    color:#d7c2aa;
+}
+
+.resultImg {
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
+}
+
+@keyframes myAnimation {
+    0% {
+       background-color: white;
+    }
+    50% {
+        background-color: #b5b5b5;
+    }
+    100% {
+        background-color: white;
+    }
+}
