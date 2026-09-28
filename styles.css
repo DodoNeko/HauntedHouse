@@ -227,6 +227,6 @@ button:active {
         justify-items: end;
     }
     .startBtn {
-        z-index: 1;
+        position: absolute;
     }
 }
