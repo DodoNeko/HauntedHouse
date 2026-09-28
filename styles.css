@@ -105,8 +105,8 @@ button:active {
     background-color: hsl(26, 14%, 46%);
     box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
     width: 500px;
-    content: wrap;
 }
+
 
 .testForm {
     width: 70%;
@@ -211,5 +211,22 @@ button:active {
     }
     100% {
         background-color: white;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .startBtnContainer {
+        justify-content: end;
+        align-items: end;
+    }
+    .startContainer {
+        width:100%;
+        
+        justify-items: end;
+    }
+    .startBtn {
+        z-index: 1;
     }
 }
