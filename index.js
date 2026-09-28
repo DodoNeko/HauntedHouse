@@ -46,6 +46,81 @@ const quiz = [
             "Bagel: Eggs",
             "Bebok: Favourite food is more food."
         ]
+    },
+    {
+        question: "How do you feel about driving vehicles or riding bigger animals?",
+        answers: [
+            "Sylvia: I have a drivers licence, but don't drive a lot. Bikes are more convenient",
+            "Lidia: I prefer being a passenger princess",
+            "Madison: I don't have a drivers licence. Horseriding sounds cool but a bit scary",
+            "Wale: I'm usually a designated driver",
+            "Alex: There's no point in driving in a city where we have so many trams and buses",
+            "Anthony: Yeah, anything is cool. It would be nice to learn how to fly a plane",
+            "Shimo:  WELL I've never tried, but of course I would be about to do it! I'm pretty sure I'd be a really talented driver, how hard can it be??",
+            "Henry: Horseriding or carriages sound good, but most other vehicles sound unsafe",
+            "Bagel: Let's not. I don't feel well in vehicles",
+            "Bebok: It's always fun! I'll try anything that moves fast!"
+        ]
+    },
+    {
+        question: "What is your favourite way to spend a free evening?",
+        answers: [
+            "Sylvia: Staying home, scrolling on my phone, playing games or watching a movie",
+            "Lidia: Doing something with my group of friends- playing board games, watching movies, whatever is fine in a good company",
+            "Madison: Learning about new things and going into long rabbit holes about different subjects",
+            "Wale: Something social or active- the best would be combining both",
+            "Alex: Reading a book or writing my own stories",
+            "Anthony: I don't have one favourite way, it depends on my mood, the weather and overall vibes",
+            "Shimo: Checking new places with food",
+            "Henry: Meeting friends and going for long walks",
+            "Bagel: Taking a nap sounds like a great idea!",
+            "Bebok: Roaming around the city and exploring new areas"
+        ]
+    },
+    {
+        question: "Are you a cat person or a dog person?",
+        answers: [
+            "Sylvia: I prefer dogs, but cats are also cute",
+            "Lidia: I love them all!",
+            "Madison: I prefer cats, but dogs are also cute",
+            "Wale: I prefer dogs, but I don't mind cats",
+            "Alex: They are both okay, but I like other animals better",
+            "Anthony: Dogs if we're living in a big house, cats if in a flat",
+            "Shimo: Definitely a cat person!",
+            "Henry: I don't mind any, they are okay",
+            "Bagel: Definitely a dog person! Some cats are okay, but most are unpredictable",
+            "Bebok: I'm a person person"
+        ]
+    },
+    {
+        question: "We're playing DnD! Which character class are you choosing?",
+        answers: [
+            "Sylvia: A druid or a ranger",
+            "Lidia: a bard or a cleric",
+            "Madison: a wizard or a sorcerer",
+            "Wale: a warrior, a paladin, or an artificer",
+            "Alex: I'd prefer to be a DM",
+            "Anthony: a warlock",
+            "Shimo: a rogue, a barbarian or a monk",
+            "Henry: I want to play but I have no idea what is going on, could you explain the rules…?",
+            "Bagel: I want to be included but I don't want to play, can I just listen and eat snacks?",
+            "Bebok: Every class! I can't decide! I'm already creating hundreds of characters in my head! "
+        ]
+    },
+    {
+        question: "Pick your favourite genre!",
+        answers: [
+            "Sylvia: romance",
+            "Lidia: mystery",
+            "Madison: fantasy, romantasy and supernatural",
+            "Wale: action",
+            "Alex: fantasy and sci-fi",
+            "Anthony: comedy",
+            "Shimo: horror or thriller",
+            "Henry: historical",
+            "Bagel: cozy slice of life",
+            "Bebok: drama or postapo"
+        ]
     }
 ]
 
@@ -101,7 +176,7 @@ function endTest() {
     counterShuffled.sort((a,b) => a.counter < b.counter);
     result = counterShuffled[0].char.toUpperCase();
     document.querySelector('.you').innerHTML = 'You are ' + result;
-    let imgSrc = result.toLowerCase() + ".png";
+    let imgSrc = "img/" + result.toLowerCase() + ".png";
 
     resultPage.classList.remove('elhide');
     resultPage.classList.add('elshow');
