@@ -224,7 +224,7 @@ button:active {
 @media (max-width: 900px) {
 
     .startBtnContainer {
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: flex-end;
     }
 
@@ -236,5 +236,9 @@ button:active {
     .startBtn {
         position: relative;
         z-index: 4;
+    }
+
+    .coverImg {
+        min-height: auto;
     }
 }
