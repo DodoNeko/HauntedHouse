@@ -88,7 +88,7 @@ h2 {
     display: flex;
     position: relative;
     justify-items:end;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     z-index: 3;
 }
