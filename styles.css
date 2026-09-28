@@ -106,8 +106,8 @@ button:active {
     border: none;
     border-radius: 40px;
     font-size: 42px;
-    color: #d7c2aa;
-    background-color: #6d5646;
+    color: #ECDAC6;
+    background-color: #6E5D53;
     box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
     width: 500px;
 }
@@ -124,8 +124,8 @@ button:active {
     border: none;
     border-radius: 40px;
     font-size: 16px;
-    color: #d7c2aa;
-    background-color: #6d5646;
+    color: #ECDAC6;
+    background-color: #6E5D53;
     box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
     margin: 10px;
     max-width: 400px;
