@@ -1,5 +1,13 @@
+@font-face {
+    font-family: "ImpactDownloaded";
+    src: url("../font/impact.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'ImpactDownloaded';
+    font-weight: normal;
 }
 .background {
     background-image: url('./img/hh-bg.png');
@@ -88,7 +96,7 @@ h2 {
     display: flex;
     position: relative;
     justify-items:end;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
     z-index: 3;
 }
@@ -239,9 +247,5 @@ button:active {
     .startBtn {
         position: relative;
         z-index: 4;
-    }
-
-    .coverImg {
-        min-height: auto;
     }
 }
